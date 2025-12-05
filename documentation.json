@@ -1,0 +1,91 @@
+{
+  "name": "Suryanshu Nabheet Documentation",
+  "initialRoute": "introduction",
+  "colors": {
+    "light": {
+      "brand": "#3B82F6",
+      "heading": "#1a1a1a",
+      "text": "#374151"
+    },
+    "dark": {
+      "brand": "#60A5FA",
+      "heading": "#f2f2f2",
+      "text": "#c1c1c1"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "icon": "book",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "icon": "rocket",
+            "pages": [
+              {
+                "title": "Introduction",
+                "path": "introduction",
+                "icon": "star"
+              }
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "icon": "lightbulb",
+            "pages": [
+              {
+                "title": "Skills",
+                "path": "skills",
+                "icon": "code"
+              },
+              {
+                "title": "Projects",
+                "path": "projects",
+                "icon": "folder"
+              },
+              {
+                "title": "Experience",
+                "path": "experience",
+                "icon": "briefcase"
+              }
+            ]
+          },
+          {
+            "group": "Contact",
+            "icon": "mail",
+            "pages": [
+              {
+                "title": "Get In Touch",
+                "path": "contact",
+                "icon": "user"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "icon": "code",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "icon": "terminal",
+            "openapi": "openapi.yaml"
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "icon": "clock",
+        "pages": [
+          {
+            "title": "Release History",
+            "path": "changelog",
+            "icon": "history"
+          }
+        ]
+      }
+    ]
+  }
+}

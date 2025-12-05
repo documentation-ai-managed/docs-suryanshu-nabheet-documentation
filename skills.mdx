@@ -1,0 +1,133 @@
+---
+title: Skills
+description: Detailed overview of Suryanshu's technical skills and expertise
+---
+
+## Technical Proficiency
+
+Suryanshu possesses a comprehensive skill set covering the full spectrum of web development technologies. His expertise enables him to build end-to-end solutions that are both robust and scalable.
+
+<Columns cols={2}>
+  <Card title="Frontend Development" icon="monitor" href="#frontend">
+    React.js, TypeScript, HTML5, CSS3, JavaScript ES6+
+  </Card>
+  <Card title="Backend Development" icon="server" href="#backend">
+    Node.js, Express.js, REST APIs, GraphQL
+  </Card>
+</Columns>
+
+## Frontend Technologies
+
+### React.js Expertise
+
+Suryanshu has extensive experience building complex user interfaces using React.js. He follows modern patterns including hooks, context API, and component composition.
+
+<Steps>
+  <Step title="Component Architecture" icon="layers">
+    Designing reusable and maintainable React components.
+  </Step>
+  <Step title="State Management" icon="database">
+    Implementing efficient state solutions using hooks and context.
+  </Step>
+  <Step title="Performance Optimization" icon="zap">
+    Optimizing rendering performance with memoization and lazy loading.
+  </Step>
+</Steps>
+
+### TypeScript Integration
+
+TypeScript is a core part of Suryanshu's development workflow, providing type safety and better developer experience.
+
+<Tabs>
+  <Tab title="Type Definitions" icon="file-text">
+    Creating comprehensive type definitions for complex data structures.
+  </Tab>
+  <Tab title="Interface Design" icon="settings">
+    Designing interfaces for API responses and component props.
+  </Tab>
+</Tabs>
+
+## Backend Technologies
+
+### Node.js Development
+
+Suryanshu builds scalable server-side applications using Node.js and Express.js frameworks.
+
+<CodeGroup tabs="Express,REST API">
+  ````javascript
+  const express = require('express');
+  const app = express();
+
+  app.get('/api/skills', (req, res) => {
+    res.json({
+      frontend: ['React', 'TypeScript'],
+      backend: ['Node.js', 'Express']
+    });
+  });
+
+  app.listen(3000, () => {
+    console.log('Server running on port 3000');
+  });
+  ````
+  ````javascript
+  // REST API endpoint
+  app.post('/api/projects', (req, res) => {
+    const newProject = req.body;
+    // Process and save project
+    res.status(201).json({
+      id: Date.now(),
+      ...newProject
+    });
+  });
+  ````
+</CodeGroup>
+
+### Real-time Systems
+
+Expertise in WebRTC and WebSocket technologies for real-time communication.
+
+<ExpandableGroup>
+  <Expandable title="WebRTC Implementation" default-open="false">
+    Building peer-to-peer video and audio communication systems.
+  </Expandable>
+  <Expandable title="WebSocket Integration" default-open="false">
+    Implementing real-time messaging and live updates.
+  </Expandable>
+</ExpandableGroup>
+
+<Callout kind="info">Suryanshu continuously updates his skills with the latest industry trends and best practices.</Callout>
+
+## Development Tools
+
+| Category | Tools | Purpose |
+|----------|-------|---------|
+| Version Control | Git, GitHub | Code collaboration and version management |
+| Package Management | npm, Yarn | Dependency management |
+| Testing | Jest, React Testing Library | Unit and integration testing |
+| Build Tools | Webpack, Babel | Code compilation and bundling |
+
+## Best Practices
+
+Suryanshu follows industry best practices in all aspects of development:
+
+- **Code Quality**: Writing clean, readable, and maintainable code
+- **Testing**: Implementing comprehensive test suites
+- **Documentation**: Creating thorough documentation for APIs and components
+- **Security**: Following security best practices in web applications
+- **Performance**: Optimizing applications for speed and efficiency
+
+## Continuous Learning
+
+Committed to staying current with evolving technologies and methodologies in software development.
+
+<Steps>
+  <Step title="Stay Updated" icon="refresh-cw">
+    Regularly learning new frameworks and tools.
+  </Step>
+  <Step title="Contribute" icon="share-2">
+    Participating in open-source projects and communities.
+  </Step>
+  <Step title="Experiment" icon="flask">
+    Exploring emerging technologies and approaches.
+  </Step>
+</Steps>

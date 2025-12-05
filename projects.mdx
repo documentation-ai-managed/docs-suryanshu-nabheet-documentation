@@ -1,0 +1,157 @@
+---
+title: Projects
+description: Showcase of Suryanshu's completed projects and development work
+---
+
+## Project Portfolio
+
+Suryanshu has worked on various projects demonstrating his ability to deliver production-ready applications across different domains.
+
+<Columns cols={3}>
+  <Card title="E-commerce Platform" icon="shopping-cart" href="#ecommerce">
+    Full-stack e-commerce solution with React and Node.js.
+  </Card>
+  <Card title="Real-time Chat App" icon="message-circle" href="#chat">
+    WebSocket-based chat application with TypeScript.
+  </Card>
+  <Card title="Video Conferencing" icon="video" href="#video">
+    WebRTC-powered video conferencing platform.
+  </Card>
+</Columns>
+
+## Featured Projects
+
+### E-commerce Platform
+
+A comprehensive e-commerce solution built with modern web technologies.
+
+<Steps>
+  <Step title="Frontend" icon="monitor">
+    Developed responsive React components with TypeScript.
+  </Step>
+  <Step title="Backend" icon="server">
+    Implemented RESTful APIs using Node.js and Express.
+  </Step>
+  <Step title="Database" icon="database">
+    Integrated MongoDB for product and user data management.
+  </Step>
+</Steps>
+
+<Tabs>
+  <Tab title="Architecture" icon="layers">
+    <ExpandableGroup>
+      <Expandable title="Frontend Structure" default-open="true">
+        Component-based architecture with reusable UI elements.
+      </Expandable>
+      <Expandable title="API Design" default-open="false">
+        RESTful endpoints for product management and user authentication.
+      </Expandable>
+    </ExpandableGroup>
+  </Tab>
+  <Tab title="Technologies" icon="code">
+    <CodeGroup tabs="React,Node.js">
+      ````jsx
+      // React component example
+      import React, { useState } from 'react';
+
+      const ProductCard = ({ product }) => {
+        const [quantity, setQuantity] = useState(1);
+
+        return (
+          <div className="product-card">
+            <h3>{product.name}</h3>
+            <p>${product.price}</p>
+            <button onClick={() => setQuantity(quantity + 1)}>
+              Add to Cart
+            </button>
+          </div>
+        );
+      };
+      ````
+      ````javascript
+      // Node.js API endpoint
+      app.get('/api/products', async (req, res) => {
+        try {
+          const products = await Product.find();
+          res.json(products);
+        } catch (error) {
+          res.status(500).json({ error: 'Server error' });
+        }
+      });
+      ````
+    </CodeGroup>
+  </Tab>
+</Tabs>
+
+### Real-time Chat Application
+
+A messaging platform with real-time communication capabilities.
+
+<Callout kind="success">Successfully implemented WebSocket connections for instant messaging.</Callout>
+
+<ExpandableGroup>
+  <Expandable title="Key Features" default-open="true">
+    - Real-time messaging with WebSocket
+    - User authentication and authorization
+    - Message history and persistence
+    - Group chat functionality
+  </Expandable>
+  <Expandable title="Technical Challenges" default-open="false">
+    Managing connection states and handling disconnections gracefully.
+  </Expandable>
+</ExpandableGroup>
+
+### Video Conferencing Platform
+
+WebRTC-based video calling application for remote collaboration.
+
+<Steps>
+  <Step title="Peer Connection" icon="users">
+    Established WebRTC peer-to-peer connections.
+  </Step>
+  <Step title="Media Handling" icon="video">
+    Implemented audio and video stream management.
+  </Step>
+  <Step title="Signaling" icon="radio">
+    Built signaling server for connection establishment.
+  </Step>
+</Steps>
+
+## Project Highlights
+
+| Project | Technologies | Key Achievement |
+|---------|-------------|-----------------|
+| E-commerce | React, Node.js, MongoDB | 99% uptime, scalable architecture |
+| Chat App | WebSocket, TypeScript | Real-time messaging for 1000+ users |
+| Video Conf | WebRTC, Express.js | Peer-to-peer video calls |
+
+## Development Process
+
+Suryanshu follows a structured approach to project development:
+
+1. **Planning**: Requirements gathering and architecture design
+2. **Development**: Iterative development with regular testing
+3. **Testing**: Comprehensive testing including unit and integration tests
+4. **Deployment**: CI/CD pipeline for automated deployments
+5. **Maintenance**: Ongoing monitoring and updates
+
+<Callout kind="tip">All projects include proper documentation, testing, and deployment strategies.</Callout>
+
+## Open Source Contributions
+
+Suryanshu actively contributes to open-source projects and maintains several repositories on GitHub.
+
+<CodeGroup tabs="GitHub,NPM">
+  ````bash
+  # Cloning a project
+  git clone https://github.com/suryanshu/project.git
+  cd project
+  npm install
+  npm start
+  ````
+  ````bash
+  # Publishing a package
+  npm login
+  npm publish
+  ````
+</CodeGroup>
